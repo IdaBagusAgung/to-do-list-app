@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const uri = "mongodb+srv://gusagung:QdapX0aO4svz7EhD@cluster0.wizfcrw.mongodb.net/todolist?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => {
